@@ -1,6 +1,6 @@
 FROM node:25.2.1-slim AS build
 ADD   . /nodejsapp
-WORKDIR /nodejdapp
+WORKDIR /nodejsapp
 RUN   npm install && \
      npm run build     
 
