@@ -1,7 +1,7 @@
 FROM node:25.2.1-slim AS build
 ADD   . /nodejsapp
 WORKDIR /nodejdapp
-RUN   npm istall && \
+RUN   npm install && \
      npm run build     
 
 FROM   nginx:1.29-alpine AS runtime   
